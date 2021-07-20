@@ -38,3 +38,4 @@ extra:
   recipe-maintainers:
     - psortos
     - oblute
+    - mxr-conda
