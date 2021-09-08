@@ -1,18 +1,18 @@
 {% set name = "vector-quantize-pytorch" %}
-{% set version = "0.1.0" %}
+{% set version = "0.2.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://github.com/lucidrains/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: dc218fa265183efc4dedc27ed4e91ab50828488c9de30d647ca12d6a22737222
+  sha256: ac8cf5902ef5b7482469602ec5c3710710aa9c3b06f94f1f1d3a19b9b5200ff8
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -27,12 +27,12 @@ test:
     - vector_quantize_pytorch
 
 about:
-  home: "https://github.com/lucidrains/vector-quantizer-pytorch"
+  home: https://github.com/lucidrains/vector-quantizer-pytorch
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Simple Vector Quantization, in Pytorch"
-  dev_url: "https://github.com/lucidrains/vector-quantizer-pytorch"
+  summary: Simple Vector Quantization, in Pytorch
+  dev_url: https://github.com/lucidrains/vector-quantizer-pytorch
 
 extra:
   recipe-maintainers:
