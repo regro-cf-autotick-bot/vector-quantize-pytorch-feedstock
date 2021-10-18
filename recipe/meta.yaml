@@ -1,5 +1,5 @@
 {% set name = "vector-quantize-pytorch" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/lucidrains/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 4d85e8172ecc12642acb6ba38dd5b905852c9692373c3c9f0d5f6498cf088fca
+  sha256: fd381837d0422bf0569807a8fc44b62bc8d920ac3ecf4c8f30f3b7c38d60b703
 
 build:
   noarch: python
